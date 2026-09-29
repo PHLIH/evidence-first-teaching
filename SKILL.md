@@ -8,8 +8,9 @@ description: >
   constants, quotations, or causal chains. Use when the user says "explain how X works",
   "teach me", "I don't get it", "explain again", "why does X happen", "look at this link/doc",
   or whenever an answer risks fabricated mechanisms, analogies, constants, citations, or causal
-  chains. Do not use for small talk, for explicitly speculative requests ("just guess a possible
-  cause"), or for creative writing.
+  chains. Also enforces defining any newly introduced term or concept at first use so the reader
+  is never blocked by unexplained jargon. Do not use for small talk, for explicitly speculative
+  requests ("just guess a possible cause"), or for creative writing.
 ---
 
 # evidence-first-teaching — Get Evidence Before Speaking
@@ -87,6 +88,22 @@ The most dangerous one. The whole answer carries citations, but a few segments w
 
 **Rule**: uncertain segments must be explicitly labelled, never blended into cited ones.
 
+## New Terms Must Be Defined at First Use
+
+A sourced explanation the user cannot follow is still a failed explanation. Introducing an undefined term is a delivery problem, exactly like repeating yourself when the user says "I don't get it".
+
+This applies in every domain — law ("tort"), medicine ("bioavailability"), cooking ("autolyse"), music ("inversion"), finance, crafts, or any field's ordinary jargon. Nothing here is specific to programming or any one project.
+
+Rules:
+
+1. **First use = definition.** The first time a term appears that the user has not used themselves in this conversation, attach a one-sentence plain-language definition right there — in the same sentence or immediately after it. Example: "the resting phase — where the dough sits so the flour absorbs water — ..."
+2. **Who introduced it decides who defines it.** If the user wrote the term, assume they know it (you may still confirm: "by X do you mean ...?"). If you introduced it, you define it.
+3. **No definition chains.** Defining X as "a kind of Y" only works if Y is already known. If Y is also new, either define Y first, or skip names entirely: show a concrete example, then attach the name afterwards — "this is what's called X."
+4. **Mark load-bearing terms.** If a new term will recur throughout the answer, flag it once — "New term: X = ..." — then use it freely. Define once, don't re-define at every use.
+5. **One new term per sentence.** Do not stack two undefined terms in one clause ("the resting phase's enzyme activity"). If a sentence needs both, split it or drop one.
+6. **When unsure whether the user knows it, define it anyway.** A five-word inline definition is cheap; a confused user who stops reading is expensive. If uncertain about the user's background in general, ask once at the start: "how familiar are you with X?"
+7. **The first paragraph must be readable cold.** If the opening needs background, give the background before the term, not after.
+
 ## When the User Gives You a Link or Document
 
 1. **Actually read it.** Do not infer content from the URL. If you cannot fetch it, say so.
@@ -116,6 +133,7 @@ The most dangerous one. The whole answer carries citations, but a few segments w
 - [ ] Does every number, date, and name have a source?
 - [ ] Does every link in the causal chain have a basis?
 - [ ] Is there any segment where I'm speaking in a "I checked" voice about something I didn't check?
+- [ ] Is every term I use either defined at first use or already used by the user themselves?
 
 ## When the User Pushes Back
 
@@ -143,3 +161,4 @@ Legal text, medical advice, financial or investment conclusions, and quotes attr
 - [ ] Is there any conclusion I did not actually verify?
 - [ ] Is any inference blended in among the citations?
 - [ ] If the user interrogates claim by claim, can I point to the source for each one?
+- [ ] Could the user read the whole answer without hitting a term I never explained?
