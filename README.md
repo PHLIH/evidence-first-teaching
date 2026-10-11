@@ -10,6 +10,7 @@ LLMs explain things fluently and confidently whether or not they checked. The fa
 
 This skill adds a few guardrails against that:
 
+- Progressive pacing: whole picture first, one layer of detail per message, every term treated as new to the reader
 - Three-part answer structure separating what's verified from what isn't
 - Seven named fabrication patterns to catch (invented mechanisms, analogies, numbers, quotes, causal chains, cross-system misattribution, and — the worst one — speaking in a "I checked" voice about things you didn't check)
 - Explicit rules for handling links and documents the user provides
@@ -20,7 +21,7 @@ This skill adds a few guardrails against that:
 Copy the directory into your skills folder:
 
 ```bash
-cp -r evidence-first-teaching ~/.pi/agent/skills/
+cp -r evidence-first-teaching ~/.agents/skills/
 ```
 
 For Claude Code, place it under `.claude/skills/` in your project or `~/.claude/skills/` globally.
