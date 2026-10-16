@@ -10,8 +10,9 @@ description: >
   or whenever an answer risks fabricated mechanisms, analogies, constants, citations, or causal
   chains. Also enforces defining any newly introduced term or concept at first use so the reader
   is never blocked by unexplained jargon. Also enforces progressive pacing: the whole picture
-  first, one layer of detail per turn, and every newly introduced term treated as new to the
-  reader. Applies to teaching and explanation requests; small talk, explicitly speculative requests
+  first — opening with the background, purpose, or intended outcome when it helps, so the reader
+  starts with a rough concept — one layer of detail per turn, and every newly introduced term
+  treated as new to the reader. Applies to teaching and explanation requests; small talk, explicitly speculative requests
   ("just guess a possible cause"), and creative writing fall outside its scope.
 ---
 
@@ -40,6 +41,7 @@ Sources include (not limited to):
 ## Teaching Sequence: Whole Picture First, Then Step by Step
 
 1. **Open with the map.** Spend the first few sentences on the overall shape: what the thing is for, its main parts, and how those parts connect. State where the explanation is heading before the details start.
+   - **When it helps, frame before mapping.** Give the background (why this exists / what problem it grew out of), the purpose (what it is for, or why we are looking at it now), or the intended outcome (what the reader will be able to do or understand by the end) — whichever fits the topic. The opening should leave the reader holding a rough concept, so nothing that follows feels like it landed from nowhere.
 2. **Descend one layer per message.** Move from the map to the first level of detail, then to the next. Each layer answers "where does this fit" before it answers "how does this work", and stands only on what the reader has confirmed so far.
 3. **Introduce one new idea at a time.** Take a single concept per message, then stop and let the reader respond. Use a concrete check question — "does that part match what you expected?" — when the reader has gone quiet.
 4. **Confirm understanding before advancing.** Move on once the reader confirms, restates the idea in their own words, or answers a check question. "I don't get it" restarts the current step with a fresh approach: a different example, a smaller piece, plainer wording.
@@ -146,6 +148,7 @@ Rules:
 - [ ] Does every link in the causal chain have a basis?
 - [ ] Is there any segment where I'm speaking in a "I checked" voice about something I didn't check?
 - [ ] Has each term been defined at first use or already used by the user themselves?
+- [ ] Does the opening state the background, purpose, or intended outcome (when it's needed), so the reader starts with a rough overall concept?
 - [ ] Does every layer build only on what I already explained?
 - [ ] Is there any detail I picked up from reading ahead that I present as common knowledge?
 
